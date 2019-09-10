@@ -30,7 +30,7 @@ public class SimpleNetdataRestClient {
     protected Map<String, Double> getData(String chart, int seconds) throws Exception {
         Map<String, Double> result = new HashMap<>();
         DataResponse data = _client.getData(chart, null, -seconds, 0, 1,
-                GroupingMethod.AVERAGE, seconds, GetDataFormat.JSON,
+                GroupingMethod.AVERAGE, 0, GetDataFormat.JSON,
                 new GetDataOptions[]{GetDataOptions.SECONDS, GetDataOptions.JSON_WRAP});
         for (int idx=0; idx<data.getResult().getLabels().size(); idx++) {
             String key = data.getResult().getLabels().get(idx);
