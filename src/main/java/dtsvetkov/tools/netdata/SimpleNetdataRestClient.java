@@ -41,6 +41,8 @@ public class SimpleNetdataRestClient {
     }
 
     /**
+     * Returns average CPU usage with <b>user, system, softirq, nice, iowait</b> metrics
+     *
      * @param seconds for how many last seconds avg value should be calculated
      * @return
      */
@@ -56,6 +58,8 @@ public class SimpleNetdataRestClient {
     }
 
     /**
+     * Returns average system load metrics as <b>load1, load5, load15</b> metrics
+     *
      * @param seconds for how many last seconds avg value should be calculated
      * @return
      */
@@ -69,6 +73,8 @@ public class SimpleNetdataRestClient {
     }
 
     /**
+     * Returns average memory usage with <b>free, used, cached, buffers</b> metrics
+     *
      * @param seconds for how many last seconds avg value should be calculated
      * @return
      */
@@ -84,6 +90,8 @@ public class SimpleNetdataRestClient {
     }
 
     /**
+     * Returns average network utilization with <b>sent, received</b> metrics
+     *
      * @param seconds for how many last seconds avg value should be calculated
      * @return
      */
@@ -97,6 +105,8 @@ public class SimpleNetdataRestClient {
 
 
     /**
+     * Returns average disks utilization as map <b>disk - utilization value</b>
+     *
      * @param seconds for how many last seconds avg value should be calculated
      * @return
      */
